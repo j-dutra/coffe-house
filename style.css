@@ -396,6 +396,52 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
 }
 /* End of  Menu */
 
+/* Data */
+.data {
+  width: 100%;
+  height: 50vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.3)), url(./images/image7.jpg) center no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.data > div {
+  width: 25rem;
+  height: 25rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.icon-wrapper {
+  width: 8rem;
+  height: 8rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.icon-bg {
+  display: block;
+  width: 100%;
+  height: 100%;
+  border: .1rem solid #c49b63;
+}
+
+.data i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  -webkit-text-stroke: .2rem #c49b63;
+  color: transparent;
+}
+
+/* End of Data */
+
 /* End of Container */
 
 
