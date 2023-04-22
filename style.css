@@ -495,7 +495,9 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
 
 .customers-banner p {
   font-size: 1.6rem;
-  color: ;
+  color: #777;
+  margin-top: 4rem;
+  line-height: 1.2;
 }
 
 .customers-banner {
@@ -506,22 +508,302 @@ span.swiper-pagination-bullet.swiper-pagination-bullet-active::after {
   text-align: center;
 }
 
+.clients {
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.client {
+  width: 25%;
+  height: 25rem;
+  background-color: #c49b63;
+  padding: 2rem;
+  color: #fff;
+  position: relative;
+}
+
+.client:nth-child(2) {
+  height: 31rem;
+}
+
+.client:nth-child(4){
+  height: 21rem;
+}
+
+.client:nth-child(even){
+  opacity: 0.9;
+}
+
+.client p {
+  font-size: 1.6rem;
+  margin-bottom: 2rem;
+}
+
+.client div {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  align-items: center;
+}
+
 .client img {
   width: 5rem;
   height: 5rem;
   object-fit: cover;
   border-radius: 50%;
+  margin-right: 2rem;
 }
 
-
+.client div span {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+}
 /* End of Customers */
 
+/* Contact */
+.contact {
+  width: 100%;
+  height: 60vh;
+  background-color: #000;
+  display: flex;
+}
+
+.contact-left {
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url(./images/image1.jpg) center no-repeat;
+  background-size: cover;
+}
+
+.contact-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-right h1 {
+  font-size: 4rem;
+  font-weight: 300;
+  color: #fff;
+  margin: 0 0 3rem 2rem;
+}
+
+.input-group {
+  display: flex;
+}
+
+.input-group input, textarea {
+  width: 30rem;
+  height: 5rem;
+  padding: 1rem 1rem 2rem 0;
+  margin: 2rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.3);
+  color: #fff;
+}
+
+.input-group textarea {
+  resize: none;
+  height: 5rem;
+}
+
+textarea::-webkit-scrollbar {
+  display: none;
+}
+
+.input-group input::placeholder,
+.input-group textarea::placeholder {
+  color: #fff;
+}
+
+.contact-btn {
+  width: 30rem;
+  height: 6rem;
+  background-color: #c49b63;
+  color: #2a2727;
+  margin: 1rem 2rem;
+  border: none;
+  cursor: pointer;
+}
+/* End of Contact */
+
+/* Footer */
+footer {
+  width: 100%;
+  height: 10rem;
+  background-color: #262626;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.copyright {
+  font-size: 1.6rem;
+  color: #999;
+}
+/* End of Footer */
 /* End of Container */
 
+/* Responsive */
+@media (max-width: 1500px){
+  html {
+    font-size: 55%;
+  }
+}
 
+@media (max-width: 1300px){
+  html {
+    font-size: 50%;
+  }
+}
 
-/* Navigation */
-/* End of Navigation */
+@media (max-width: 1100px){
+  html {
+    font-size: 45%;
+  }
 
+  .menu-img-wrapper {
+    width: 18rem;
+    height: 18rem;
+  }
 
+  .customers {
+    height: 120vh;
+  }
 
+  .clients {
+    flex-direction: column;
+  }
+
+  .client {
+    width: 100%;
+    height: 15rem;
+  }
+
+  .client:nth-child(2) {
+    height: 15rem;
+  }
+
+  .client:nth-child(4) {
+    height: 15rem;
+  }
+
+  .contact-left {
+    display: none;
+  }
+
+  .contact-right {
+    width: 100%;
+  }
+
+  .input-group input, textarea, .contact-btn {
+    width: 40rem;
+  }
+}
+
+@media (max-width: 900px){
+  .landing-contact div span:nth-child(2){
+    display: none;
+  }
+
+  .menu-left {
+    width: 100%;
+    text-align: center;
+    margin-right: 0;
+  }
+
+  .menu-left p {
+    margin: 2rem auto 4rem auto;
+  }
+
+  .menu-right {
+    display: none;
+  }
+
+  .customers {
+    height: 140vh;
+  }
+
+  .customers h1 {
+    width: 50rem;
+    margin: auto;
+  }
+
+  .customers-banner p {
+    width: 60rem;
+  }
+
+  .client {
+    height: 18rem;
+  }
+
+  .client:nth-child(2) {
+    height: 18rem;
+  }
+
+  .client:nth-child(4) {
+    height: 18rem;
+  }
+
+  .input-group {
+    flex-direction: column;
+  }
+
+  .contact {
+    height: 90vh;
+  }
+
+  .input-group input, textarea, .contact-btn {
+    width: 60rem;
+  }
+}
+
+@media (max-width: 600px){
+  html {
+    font-size: 35%;
+  }
+
+  .landing-contact {
+    height: 19rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details div {
+    width: 20rem;
+  }
+
+  .about {
+    height: 80vh;
+    flex-direction: column;
+  }
+
+  .about div {
+    width: 60rem;
+    margin: 2rem auto;
+  }
+
+  .customers {
+    height: 110vh;
+  }
+}
+
+@media (max-width: 450px){
+  .logo {
+    display: none;
+  }
+
+  .customers {
+    height: 120vh;
+  }
+
+  .input-group input, textarea, .contact-btn {
+    width: 50rem;
+  }
+}
+/* End of Responsive*/
